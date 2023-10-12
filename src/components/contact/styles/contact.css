@@ -1,0 +1,26 @@
+
+.contact-subtitle {
+	width: 100% !important;
+}
+
+.socials-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+}
+
+.contact-socials {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.contact-title-keyword {
+	background-image: linear-gradient(to right,  rgb(87, 134, 118),  rgb(194, 187, 119));
+  background-clip: text;
+	color: transparent;
+}
+
+.contact-container {
+	margin-bottom: 100px;
+}

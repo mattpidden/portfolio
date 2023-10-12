@@ -1,83 +1,50 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by truethari",
-		name: "Tharindu N.",
-		email: "mail@tharindu.dev",
-		logo: "../logo.png",
+		title: "MP Portfolio",
+		name: "Matthew Pidden",
+		email: "mdpidden@yahoo.co.uk",
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
-		github: "https://github.com/",
-		linkedin: "https://linkedin.com/",
-		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		github: "https://github.com/mattpidden",
+		linkedin: "https://www.linkedin.com/in/matthew-pidden-67bab9121/",
+		instagram: "https://instagram.com/mattpidden",
 	},
 
 	homepage: {
-		title: "Full-stack web and mobile app developer, and amateur astronaut.",
-		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
-	},
-
-	about: {
-		title: "I’m Tharindu N. I live in Sri Lanka, where I design the future.",
-		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to. If you're interested in any of the projects I've worked on, please feel free to check out the code and suggest any improvements or enhancements you might have in mind. Collaborating with others is a great way to learn and grow, and I'm always open to new ideas and feedback.",
-	},
-
-	articles: {
-		title: "I'm passionate about pushing the boundaries of what's possible and inspiring the next generation of innovators.",
-		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-	},
+		titlepart1: "Greetings, I'm ",
+		titlepart2: "An undergraduate CS student at the Univeristy of Bristol, UK.",
+		description:	"I am a highly motivated and ambitious 20-year-old Computer Science Student, with a track record of initiating and successfully executing my own projects, including launching various apps. Additionally, I am an avid sailor with a Yachtmaster Offshore certification. During the summer months, I work as a Yacht Skipper with a teenager based sail training organisation, where I have the privilege of sharing my passion for sailing with others. Combining my technical expertise with my love for the sea, I am constantly striving to explore innovative solutions and create impactful experiences in both the digital and maritime realms. In fact, I have just recently started working on a marine conservation data logging full stack application for the Univeristy's Scuba Diving Club."
+			},
 
 	projects: [
 		{
-			title: "Project 1",
+			title: "Vague iOS App",
+			description:
+				"This project really drew on my UI/UX design skill set, with full implementation done in Swift.",
+			logo: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png",
+			linkText: "View Project",
+			link: "https://apps.apple.com/gb/app/vague/id6443783608",
+		},
+
+		{
+			title: "HK Dragon iOS App",
+			description:
+				"This project was commissioned by the Royal Hong Kong Yacht Club, and utilises a Firebase database, with all front and back end programmed in Swift.",
+			logo: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png",
+			linkText: "View Project",
+			link: "https://apps.apple.com/ug/app/hk-dragons/id1584824125",
+		},
+
+		{
+			title: "Python Image Recognition Game",
 			description:
 				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
 			linkText: "View Project",
 			link: "https://github.com",
 		},
 
-		{
-			title: "Project 2",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 3",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 4",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
-
-		{
-			title: "Project 5",
-			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
-			linkText: "View Project",
-			link: "https://github.com",
-		},
 	],
 };
 

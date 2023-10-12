@@ -1,5 +1,14 @@
 @import "../../data/styles.css";
 
+.content-wrapper {
+	max-width: 60%;
+	margin: 0 auto;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 .homepage-logo-container {
 	display: flex;
 	justify-content: left;
@@ -27,6 +36,12 @@
 	width: 85% !important;
 }
 
+.homepage-title-name {
+	background-image: linear-gradient(to right, rgb(75, 97, 55), rgb(136, 146, 90), rgb(194, 170, 119));
+  background-clip: text;
+	color: transparent;
+}
+
 .homepage-subtitle {
 	width: 85% !important;
 }
@@ -41,14 +56,10 @@
 	height: 370px;
 }
 
-.homepage-image-wrapper {
-	overflow: hidden;
-	border-radius: 10%;
-	transform: rotate(3deg);
-}
-
 .homepage-image-wrapper img {
 	width: 100%;
+	overflow: hidden;
+	border-radius: 10%;
 }
 
 .homepage-socials {
@@ -75,22 +86,12 @@
 
 .homepage-projects {
 	flex-basis: 300px;
-	padding-top: 40px;
+	padding-top: 200px;
 }
 
-.homepage-articles {
-	flex-basis: 900px;
-	padding-top: 30px;
-	margin-left: -30px;
-}
-
-.homepage-article {
-	padding-bottom: 5px;
-}
-
-.homepage-works {
-	flex-basis: 600px;
-	padding-top: 30px;
+.homepage-contact {
+	flex-basis: 300px;
+	padding-top: 200px;
 }
 
 @media (max-width: 1024px) {

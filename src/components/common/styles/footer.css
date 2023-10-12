@@ -13,30 +13,9 @@
 	flex-basis: 50%;
 }
 
-.footer-links {
-	margin-left: -40px;
-}
 
-.footer-nav-link-list {
-	display: flex;
-	list-style: none;
-	justify-content: space-between;
-	align-items: center;
-}
 
-.footer-nav-link-item {
-	font-weight: bold;
-	font-size: 80%;
-}
 
-.footer-nav-link-list a {
-	text-decoration: none;
-	color: var(--secondary-color);
-}
-
-.footer-nav-link-list a:hover {
-	color: var(--link-color);
-}
 
 .footer-credits-text {
 	justify-content: flex-end;
