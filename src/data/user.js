@@ -7,43 +7,84 @@ const INFO = {
 
 	socials: {
 		github: "https://github.com/mattpidden",
-		linkedin: "https://www.linkedin.com/in/matthew-pidden-67bab9121/",
+		linkedin: "https://www.linkedin.com/in/matthew-pidden",
 		instagram: "https://instagram.com/mattpidden",
 	},
 
 	homepage: {
 		titlepart1: "Greetings, I'm ",
-		titlepart2: "An undergraduate CS student at the Univeristy of Bristol, UK.",
-		description:	"I am a highly motivated and ambitious 20-year-old Computer Science Student, with a track record of initiating and successfully executing my own projects, including launching various apps. Additionally, I am an avid sailor with a Yachtmaster Offshore certification. During the summer months, I work as a Yacht Skipper with a teenager based sail training organisation, where I have the privilege of sharing my passion for sailing with others. Combining my technical expertise with my love for the sea, I am constantly striving to explore innovative solutions and create impactful experiences in both the digital and maritime realms. In fact, I have just recently started working on a marine conservation data logging full stack application for the Univeristy's Scuba Diving Club."
+		titlepart2: "A final year CS student at the Univeristy of Bristol.",
+		description:	"I am a highly motivated and ambitious final-year Computer Science student at the University of Bristol, currently averaging a grade of 81% and on track to graduate with a first-class honors degree. I have a proven track record of initiating and successfully executing my own projects, including launching multiple apps. In addition to my technical skills, I am an avid sailor with a Yachtmaster Offshore certification. Last year, I combined my expertise in both fields to develop a full-stack application for the UK’s largest scuba diving club and an internal tool for an international sail training company."
 			},
 
 	projects: [
 		{
+			title: "The Picks Website",
+			description:
+				"My most recent project is a full automatic football prediction game that utilises Flutter frontend, Firebase backend in JS. ",
+			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
+			linkText: "View Project Website",
+			link: "https://thepicksapp.com",
+		},
+		{
+			title: "Marine Conservation App & Website [UNIVERSITY PROJECT]",
+			description:
+				"During my second year at univeristy I worked all year on a group project with the scuba club, utilising Flutter, React, JS, Python and Django.",
+			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
+			linkText: "View Project Website",
+			link: "https://marineconservationapp.com/app",
+		},
+		{
+			title: "Bloginator Crossplatform App [COMMISIONED]",
+			description:
+				"As part of my internship with GXG, I created a cross platform internal tool in Flutter, that functions offline, and online with a REST API.",
+			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
+			linkText: "View on App Store [UNLISTED]",
+			link: "https://www.globalexpeditionsgroup.com/bloginator",
+		},
+		{
+			title: "Santa Tracker App",
+			description:
+				"Over a winter weekend I created a Flutter app to track Santa and hit 10,000 downloads over Christmas with no marketing.",
+			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
+			linkText: "View on App Store",
+			link: "https://apps.apple.com/us/app/live-santa-tracker/id6473787738",
+		},
+		{
+			title: "MasterWordle App",
+			description:
+				"As a short fun project, I created a cross between 'Wordle' and 'MasterMind', initally with React and JS, but then overhauled into an app with flutter.",
+			logo: "https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png",
+			linkText: "View Project GitHub",
+			link: "https://github.com/mattpidden/masterwordle/tree/main",
+		},
+		{
 			title: "Vague iOS App",
 			description:
-				"This project really drew on my UI/UX design skill set, with full implementation done in Swift.",
+				"This project showcases my frontend and UI/UX design skill set, with full implementation in Swift and XCode, available on iOS.",
 			logo: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png",
-			linkText: "View Project",
+			linkText: "View on App Store",
 			link: "https://apps.apple.com/gb/app/vague/id6443783608",
 		},
 
 		{
-			title: "HK Dragon iOS App",
+			title: "HK Dragon iOS App [COMMISIONED]",
 			description:
-				"This project was commissioned by the Royal Hong Kong Yacht Club, and utilises a Firebase database, with all front and back end programmed in Swift.",
+				"This project was commissioned by the Royal Hong Kong Yacht Club, and utilises a Firestore database, with a Swift frontend.",
 			logo: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png",
-			linkText: "View Project",
+			linkText: "View on App Store",
 			link: "https://apps.apple.com/ug/app/hk-dragons/id1584824125",
 		},
 
 		{
 			title: "Python Image Recognition Game",
 			description:
-				"Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+				"During my final year of high school, I competed in the FOBISIA Coding challenge and achieved 1st place with this Python project.",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
-			linkText: "View Project",
-			link: "https://github.com",
+			linkText: "View Project GitHub",
+			link: "https://github.com/mattpidden/potionbrewer/blob/main/_PLEASE%20READ_%20Potion%20Brewer%20Documentation.pdf",
 		},
+		
 
 	],
 };

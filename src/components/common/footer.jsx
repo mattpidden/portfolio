@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import "./styles/footer.css";
 
@@ -11,7 +10,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2023 Matthew Pidden
+						© 2024 Matthew Pidden
 					</div>
 				</div>
 			</div>

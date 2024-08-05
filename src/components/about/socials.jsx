@@ -2,10 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
-	faTwitter,
 	faGithub,
 	faLinkedin,
-	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 import INFO from "../../data/user";
@@ -25,7 +23,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on GitHub</div>
+					<div className="social-text">View my GitHub</div>
 				</a>
 			</div>
 
@@ -41,7 +39,7 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on LinkedIn</div>
+					<div className="social-text">View my LinkedIn</div>
 				</a>
 			</div>
 
