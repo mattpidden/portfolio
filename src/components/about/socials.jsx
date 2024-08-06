@@ -51,7 +51,7 @@ const Socials = () => {
 
 			<div className="social">
 				<a
-					href={"/Matthew Pidden CV.pdf"}
+					href={"Matthew Pidden CV.pdf"}
 					download={"Matthew Pidden CV.pdf"}
 				>
 					<div className="social-icon">

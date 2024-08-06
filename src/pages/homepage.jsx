@@ -133,7 +133,7 @@ const Homepage = () => {
 							</>
 							<>
 								<a
-									href={"/Matthew Pidden CV.pdf"}
+									href={"Matthew Pidden CV.pdf"}
 									download={"Matthew Pidden CV.pdf"}
 									className="download-cv-tooltip"
 								>
