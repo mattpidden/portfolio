@@ -55,10 +55,19 @@ const INFO = {
 			link: "https://apps.apple.com/us/app/live-santa-tracker/id6473787738",
 		},
 		{
+			title: "Parallel and Distributed Research [UNIVERSITY PROJECT]",
+			date: "December 2023",
+			description:
+				"This was my favourite university project so far, which I completed in GO and acheived a grade of 81%.",
+			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Go_Logo_Blue.svg/512px-Go_Logo_Blue.svg.png",
+			linkText: "View Project Report",
+			link: "https://github.com/mattpidden/portfolio/blob/main/public/GO-Coursework-Report.pdf",
+		},
+		{
 			title: "MasterWordle App",
 			date: "May 2023",
 			description:
-				"As a short fun project, I created a cross between 'Wordle' and 'MasterMind', initally with React and JS, but then overhauled into an app with flutter.",
+				"As a short fun project, I created a cross between 'Wordle' and 'MasterMind', initally with React and JS, but then overhauled into an app using Flutter.",
 			logo: "https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png",
 			linkText: "View Project GitHub",
 			link: "https://github.com/mattpidden/masterwordle/tree/main",
