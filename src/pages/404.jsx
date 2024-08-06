@@ -1,7 +1,4 @@
 import React, { useEffect } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { faFaceSadTear } from "@fortawesome/free-regular-svg-icons";
 
 import NavBar from "../components/common/navBar";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFile } from "@fortawesome/free-solid-svg-icons";
 import {
 	faGithub,
 	faLinkedin,
@@ -28,11 +28,7 @@ const Socials = () => {
 			</div>
 
 			<div className="social">
-				<a
-					href={INFO.socials.linkedin}
-					target="_blank"
-					rel="noreferrer"
-				>
+				<a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
 					<div className="social-icon">
 						<FontAwesomeIcon
 							icon={faLinkedin}
@@ -43,20 +39,28 @@ const Socials = () => {
 				</a>
 			</div>
 
-		
-
-			<div className="email">
-					<a
-						href={`mailto:${INFO.main.email}`}
-						target="_blank"
-						rel="noreferrer"
-					>
+			<div className="social">
+					<a href={`mailto:${INFO.main.email}`} target="_blank" rel="noreferrer">
 						<div className="social-icon">
-							<FontAwesomeIcon icon={faEnvelope} />
+							<FontAwesomeIcon icon={faEnvelope} className="social-icon" />
 						</div>
 
 						<div className="social-text">{INFO.main.email}</div>
 					</a>
+			</div>
+
+			<div className="social">
+				<a
+					href={"/Matthew Pidden CV.pdf"}
+					download={"Matthew Pidden CV.pdf"}
+				>
+					<div className="social-icon">
+						<FontAwesomeIcon icon={faFile} className="social-icon" />
+					</div>
+
+					<div className="social-text">Download CV / Resume</div>
+
+				</a>
 			</div>
 		</div>
 	);

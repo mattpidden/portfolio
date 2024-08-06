@@ -2,8 +2,6 @@ import React from "react"
 
 import Socials from "../about/socials";
 
-import INFO from "../../data/user";
-
 import "./styles/contact.css";
 
 const Contact = () => {

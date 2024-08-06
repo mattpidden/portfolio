@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 
-import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk, faFile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faLinkedin,
 	faGithub
 } from "@fortawesome/free-brands-svg-icons";
+import { Tooltip } from 'react-tooltip';
+import 'react-tooltip/dist/react-tooltip.css';
 
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
@@ -19,9 +21,8 @@ import "./styles/homepage.css";
 import Contact from "../components/contact/contact";
 
 const Homepage = () => {
-	const [stayLogo, setStayLogo] = useState(false);
-	const [logoSize, setLogoSize] = useState(80);
-	const [oldLogoSize, setOldLogoSize] = useState(80);
+	const [logoSize] = useState(80);
+	const [oldLogoSize] = useState(80);
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -29,7 +30,6 @@ const Homepage = () => {
 
 	useEffect(() => {
 		const handleScroll = () => {
-			let scroll = Math.round(window.pageYOffset, 2);
 		};
 
 		window.addEventListener("scroll", handleScroll);
@@ -37,16 +37,6 @@ const Homepage = () => {
 	}, [logoSize, oldLogoSize]);
 
 	const currentSEO = SEO.find((item) => item.page === "home");
-
-	const logoStyle = {
-		display: "flex",
-		position: stayLogo ? "fixed" : "relative",
-		top: stayLogo ? "3vh" : "auto",
-		zIndex: 999,
-		border: stayLogo ? "1px solid white" : "none",
-		borderRadius: stayLogo ? "50%" : "none",
-		boxShadow: stayLogo ? "0px 4px 10px rgba(0, 0, 0, 0.25)" : "none",
-	};
 
 	return (
 		<React.Fragment>
@@ -84,7 +74,7 @@ const Homepage = () => {
 							<div className="homepage-first-area-right-side">
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
-									<img src={require('./portraitpic.jpg')} alt="Profile picture" className="homepage-image"/>
+									<img src={require('./portraitpic.jpg')} alt="Portrait" className="homepage-image"/>
 
 									
 									</div>
@@ -93,36 +83,69 @@ const Homepage = () => {
 						</div>
 
 						<div className="homepage-socials">
-							<a
-								href={INFO.socials.github}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.linkedin}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faLinkedin}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={`mailto:${INFO.main.email}`}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faMailBulk}
-									className="homepage-social-icon"
-								/>
-							</a>
+							<>
+								<a
+									href={INFO.socials.github}
+									target="_blank"
+									rel="noreferrer"
+									className="github-tooltip"
+								>
+									<FontAwesomeIcon
+										icon={faGithub}
+										className="homepage-social-icon"
+									/>
+								</a>
+								<Tooltip anchorSelect=".github-tooltip" place="top">
+									View my GitHub
+								</Tooltip>
+							</>
+							<>
+								<a
+									href={INFO.socials.linkedin}
+									target="_blank"
+									rel="noreferrer"
+									className="linkedin-tooltip"
+								>
+									<FontAwesomeIcon
+										icon={faLinkedin}
+										className="homepage-social-icon"
+									/>
+								</a>
+								<Tooltip anchorSelect=".linkedin-tooltip" place="top">
+									View my LinkedIn
+								</Tooltip>
+							</>
+							<>
+								<a
+									href={`mailto:${INFO.main.email}`}
+									target="_blank"
+									rel="noreferrer"
+									className="email-me-tooltip"
+								>
+									<FontAwesomeIcon
+										icon={faMailBulk}
+										className="homepage-social-icon"
+									/>
+								</a>
+								<Tooltip anchorSelect=".email-me-tooltip" place="top">
+									Email Me
+								</Tooltip>
+							</>
+							<>
+								<a
+									href={"/Matthew Pidden CV.pdf"}
+									download={"Matthew Pidden CV.pdf"}
+									className="download-cv-tooltip"
+								>
+									<FontAwesomeIcon
+										icon={faFile}
+										className="homepage-social-icon"
+									/>
+								</a>
+								<Tooltip anchorSelect=".download-cv-tooltip" place="top">
+									Download CV / Resume
+								</Tooltip>
+							</>
 						</div>
 
 						<div className="homepage-projects" id="homepage-projects">

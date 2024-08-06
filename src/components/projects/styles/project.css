@@ -39,13 +39,21 @@
 	font-family: var(--secondary-font);
 	color: var(--primary-color);
 	font-size: 16px;
-	padding-top: 15px;
 	margin-bottom: 1em;
 	font-weight: 700;
 }
 
 .project-description {
 	color: var(--secondary-color);
+}
+
+.project-date {
+	display: flex;
+	align-items: center;
+	color: var(--secondary-color);
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 5px;
 }
 
 .project-link {

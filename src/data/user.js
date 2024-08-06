@@ -20,6 +20,7 @@ const INFO = {
 	projects: [
 		{
 			title: "The Picks Website",
+			date: "Work in progress...",
 			description:
 				"My most recent project is a full automatic football prediction game that utilises Flutter frontend, Firebase backend in JS. ",
 			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
@@ -28,6 +29,7 @@ const INFO = {
 		},
 		{
 			title: "Marine Conservation App & Website [UNIVERSITY PROJECT]",
+			date: "May 2024",
 			description:
 				"During my second year at univeristy I worked all year on a group project with the scuba club, utilising Flutter, React, JS, Python and Django.",
 			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
@@ -36,6 +38,7 @@ const INFO = {
 		},
 		{
 			title: "Bloginator Crossplatform App [COMMISIONED]",
+			date: "May 2024",
 			description:
 				"As part of my internship with GXG, I created a cross platform internal tool in Flutter, that functions offline, and online with a REST API.",
 			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
@@ -44,6 +47,7 @@ const INFO = {
 		},
 		{
 			title: "Santa Tracker App",
+			date: "December 2023",
 			description:
 				"Over a winter weekend I created a Flutter app to track Santa and hit 10,000 downloads over Christmas with no marketing.",
 			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
@@ -52,6 +56,7 @@ const INFO = {
 		},
 		{
 			title: "MasterWordle App",
+			date: "May 2023",
 			description:
 				"As a short fun project, I created a cross between 'Wordle' and 'MasterMind', initally with React and JS, but then overhauled into an app with flutter.",
 			logo: "https://seeklogo.com/images/J/javascript-logo-8892AEFCAC-seeklogo.com.png",
@@ -60,6 +65,7 @@ const INFO = {
 		},
 		{
 			title: "Vague iOS App",
+			date: "Feb 2023",
 			description:
 				"This project showcases my frontend and UI/UX design skill set, with full implementation in Swift and XCode, available on iOS.",
 			logo: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png",
@@ -69,6 +75,7 @@ const INFO = {
 
 		{
 			title: "HK Dragon iOS App [COMMISIONED]",
+			date: "Sep 2021",
 			description:
 				"This project was commissioned by the Royal Hong Kong Yacht Club, and utilises a Firestore database, with a Swift frontend.",
 			logo: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/swift/swift.png",
@@ -78,6 +85,7 @@ const INFO = {
 
 		{
 			title: "Python Image Recognition Game",
+			date: "March 2021",
 			description:
 				"During my final year of high school, I competed in the FOBISIA Coding challenge and achieved 1st place with this Python project.",
 			logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png",
