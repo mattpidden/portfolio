@@ -13,7 +13,7 @@ const INFO = {
 
 	homepage: {
 		titlepart1: "Greetings, I'm ",
-		titlepart2: "A final year CS student at the Univeristy of Bristol.",
+		titlepart2: "A Top 10 CS student at the Univeristy of Bristol.",
 		description:	"I am a highly motivated and ambitious final-year Computer Science student at the University of Bristol, currently averaging a grade of 81% and on track to graduate with a first-class honors degree. I have a proven track record of initiating and successfully executing my own projects, including launching multiple apps. In addition to my technical skills, I am an avid sailor with a Yachtmaster Offshore certification. Last year, I combined my expertise in both fields to develop a full-stack application for the UK’s largest scuba diving club and an internal tool for an international sail training company."
 			},
 
