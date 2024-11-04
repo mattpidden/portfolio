@@ -19,11 +19,29 @@ const INFO = {
 
 	projects: [
 		{
-			title: "The Picks Website",
-			date: "Work in progress...",
+			title: "Intrlinc Portal App [COMMISIONED]",
+			date: "September 2024 - Present",
 			description:
-				"My most recent project is a full automatic football prediction game that utilises Flutter frontend, Firebase backend in JS. ",
+				"As I continue to work with GXG, I have progressed onto their Portal dev team, working on their app that provides a subset of their custom Portal website features.",
 			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
+			linkText: "View Client [APP IN DEV]",
+			link: "https://www.globalexpeditionsgroup.com/",
+		},
+		{
+			title: "Rally Computer",
+			date: "September 2024 - Present",
+			description:
+				"Working closley with a professional UK Rally Co-driver, I am creating a cross platform mobile Rally Computer in Flutter.",
+			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
+			linkText: "[APP IN DEV]",
+			link: "",
+		},
+		{
+			title: "The Picks Web App",
+			date: "March 2024 - Present",
+			description:
+				"My main project at the moment is a full stack automatic football prediction game that utilises Flutter frontend, Firebase hosted backend in JS.",
+			logo: "https://cdn.worldvectorlogo.com/logos/firebase-1.svg",
 			linkText: "View Project Website",
 			link: "https://thepicksapp.com",
 		},
@@ -47,12 +65,12 @@ const INFO = {
 		},
 		{
 			title: "Santa Tracker App",
-			date: "December 2023",
+			date: "December 2023 - Present",
 			description:
 				"Over a winter weekend I created a Flutter app to track Santa and hit 10,000 downloads over Christmas with no marketing.",
 			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
-			linkText: "View on App Store",
-			link: "https://apps.apple.com/us/app/live-santa-tracker/id6473787738",
+			linkText: "View Landing Page",
+			link: "https://vague.dev/santa-tracker",
 		},
 		{
 			title: "Parallel and Distributed Research [UNIVERSITY PROJECT]",
