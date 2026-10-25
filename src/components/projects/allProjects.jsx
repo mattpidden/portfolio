@@ -20,28 +20,33 @@ const AllProjects = () => {
 	);
 
 	return (
-		<div className="all-projects-container">
-			<div className="title all-projects-title">
+		<section className="all-projects-container" aria-labelledby="projects-heading">
+			<h2 className="title all-projects-title" id="projects-heading">
 				<span>Take A Look At My </span>
 				<span className="project-title-keyword">Projects</span>
-			</div>
+			</h2>
 
-			<div className="project-filters">
+			<div className="project-filters" role="group" aria-label="Filter projects">
 				{FILTERS.map(({ key, label }) => (
 					<button
 						type="button"
 						key={key}
 						className={`project-filter${filter === key ? " active" : ""}`}
 						onClick={() => setFilter(key)}
+						aria-pressed={filter === key}
 					>
 						{label}
 					</button>
 				))}
 			</div>
 
-			<div className="project-list-container">
+			<p className="visually-hidden" aria-live="polite">
+				Showing {projects.length} projects
+			</p>
+
+			<ul className="project-list-container">
 			{projects.map((project) => (
-				<div className="all-projects-project" key={project.title}>
+				<li className="all-projects-project" key={project.title}>
 					<Project
 						logos={project.logos}
 						badges={project.badges}
@@ -52,10 +57,10 @@ const AllProjects = () => {
 						linkText={project.linkText}
 						link={project.link}
 					/>
-				</div>
+				</li>
 			))}
-			</div>
-		</div>
+			</ul>
+		</section>
 	);
 };
 

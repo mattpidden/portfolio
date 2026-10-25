@@ -39,6 +39,7 @@
 }
 
 .notfound-title {
+	margin: 0;
 	font-family: var(--secondary-font);
 	color: var(--primary-color);
 	font-size: 80px;

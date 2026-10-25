@@ -16,31 +16,35 @@ const Socials = () => {
 			
 
 			<div className="social">
-				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
+				<a href={INFO.socials.github} target="_blank" rel="noopener noreferrer">
 					<div className="social-icon">
 						<FontAwesomeIcon
 							icon={faGithub}
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">View my GitHub</div>
+					<div className="social-text">
+						View my GitHub<span className="visually-hidden"> (opens in a new tab)</span>
+					</div>
 				</a>
 			</div>
 
 			<div className="social">
-				<a href={INFO.socials.linkedin} target="_blank" rel="noreferrer">
+				<a href={INFO.socials.linkedin} target="_blank" rel="noopener noreferrer">
 					<div className="social-icon">
 						<FontAwesomeIcon
 							icon={faLinkedin}
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">View my LinkedIn</div>
+					<div className="social-text">
+						View my LinkedIn<span className="visually-hidden"> (opens in a new tab)</span>
+					</div>
 				</a>
 			</div>
 
 			<div className="social">
-					<a href={`mailto:${INFO.main.email}`} target="_blank" rel="noreferrer">
+					<a href={`mailto:${INFO.main.email}`}>
 						<div className="social-icon">
 							<FontAwesomeIcon icon={faEnvelope} className="social-icon" />
 						</div>
@@ -58,7 +62,7 @@ const Socials = () => {
 						<FontAwesomeIcon icon={faFile} className="social-icon" />
 					</div>
 
-					<div className="social-text">Download CV / Resume</div>
+					<div className="social-text">Download CV / Resume (PDF)</div>
 
 				</a>
 			</div>

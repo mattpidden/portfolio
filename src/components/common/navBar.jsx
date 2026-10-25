@@ -8,7 +8,7 @@ const NavBar = (props) => {
 	return (
 		<React.Fragment>
 			<div className="nav-container">
-				<nav className="navbar">
+				<nav className="navbar" aria-label="Main">
 					<div className="nav-background">
 						<ul className="nav-list">
 							<li

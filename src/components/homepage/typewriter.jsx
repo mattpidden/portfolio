@@ -20,15 +20,11 @@ const Typewriter = ({ phrases }) => {
 
 	const phrase = phrases[index];
 
+	const still = reducedMotion;
+
 	useEffect(() => {
-		// Without animation, show each phrase in full and swap periodically
-		if (reducedMotion) {
-			const timer = setTimeout(
-				() => setIndex((i) => (i + 1) % phrases.length),
-				HOLD_DELAY * 2
-			);
-			return () => clearTimeout(timer);
-		}
+		// The visitor prefers reduced motion: hold the first phrase
+		if (still) return;
 
 		let timer;
 		if (!deleting && length < phrase.length) {
@@ -44,10 +40,10 @@ const Typewriter = ({ phrases }) => {
 			}, NEXT_DELAY);
 		}
 		return () => clearTimeout(timer);
-	}, [length, deleting, phrase, phrases.length, reducedMotion]);
+	}, [length, deleting, phrase, phrases.length, still]);
 
 	const longest = phrases.reduce((a, b) => (b.length > a.length ? b : a), "");
-	const visible = reducedMotion ? phrase : phrase.slice(0, length);
+	const visible = still ? phrase : phrase.slice(0, length);
 
 	return (
 		<span className="typewriter">
@@ -58,7 +54,7 @@ const Typewriter = ({ phrases }) => {
 				<span className="typewriter-placeholder">{longest}</span>
 				<span className="typewriter-text">
 					{visible}
-					<span className="typewriter-cursor" />
+					{!still && <span className="typewriter-cursor" />}
 				</span>
 			</span>
 		</span>

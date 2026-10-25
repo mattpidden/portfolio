@@ -15,7 +15,7 @@ const Project = (props) => {
 				<div className="project-logos">
 					{logos.map((logo) => (
 						<div className="project-logo" key={logo.alt}>
-							<img src={logo.src} alt={logo.alt} title={logo.alt} />
+							<img src={logo.src} alt={logo.alt} title={logo.alt} width="30" height="30" />
 						</div>
 					))}
 				</div>
@@ -32,15 +32,19 @@ const Project = (props) => {
 			</div>
 			<div className="project-date">
 				{category && (
-					<FontAwesomeIcon
-						className="project-category-icon"
-						icon={category === "hardware" ? faMicrochip : faCode}
-						title={category === "hardware" ? "Hardware & Robotics" : "Software"}
-					/>
+					<>
+						<FontAwesomeIcon
+							className="project-category-icon"
+							icon={category === "hardware" ? faMicrochip : faCode}
+						/>
+						<span className="visually-hidden">
+							{category === "hardware" ? "Hardware and robotics project, " : "Software project, "}
+						</span>
+					</>
 				)}
 				{date}
 			</div>
-			<div className="project-title">{title}</div>
+			<h3 className="project-title">{title}</h3>
 
 			<div className="project-description">{description}</div>
 			{link && (
@@ -49,7 +53,10 @@ const Project = (props) => {
 						<FontAwesomeIcon icon={faLink} />
 					</div>
 
-					<div className="project-link-text">{linkText}</div>
+					<div className="project-link-text">
+						{linkText}
+						<span className="visually-hidden"> (opens in a new tab)</span>
+					</div>
 				</div>
 			)}
 		</div>

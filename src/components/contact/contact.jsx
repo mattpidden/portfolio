@@ -7,12 +7,12 @@ import "./styles/contact.css";
 const Contact = () => {
 
 	return (
-					<div className="contact-container">
-						<div className="title contact-title">
+					<section className="contact-container" aria-labelledby="contact-heading">
+						<h2 className="title contact-title" id="contact-heading">
 							<span>Get In </span>
 							<span className="contact-title-keyword">Contact </span>
 							<span>With Me</span>
-						</div>
+						</h2>
 
 						<div className="subtitle contact-subtitle">
 							Thank you for your interest in getting in touch with
@@ -28,8 +28,7 @@ const Contact = () => {
 								<Socials />
 							</div>
 						</div>
-					</div>
-					
+					</section>
 	);
 };
 

@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import NavBar from "../components/common/navBar";
 
@@ -15,24 +16,24 @@ const Notfound = () => {
 		<React.Fragment>
 			<div className="not-found page-content">
 				<NavBar />
-				<div className="content-wrapper">
+				<main className="content-wrapper" id="main">
 					<div className="notfound-logo-container">
 						
 					</div>
 					<div className="notfound-container">
 						<div className="notfound-message">
-							<div className="notfound-title">
-								Oops! 
-							</div>
-							<div className="not-found-message">
+							<h1 className="notfound-title">
+								Oops!
+							</h1>
+							<p className="not-found-message">
 								404 Error. This page does not exist.
-							</div>
-							<a href="/portfolio" className="not-found-link">
+							</p>
+							<Link to="/portfolio/" className="not-found-link">
 								Go back to the home page
-							</a>
+							</Link>
 						</div>
 					</div>
-				</div>
+				</main>
 			</div>
 		</React.Fragment>
 	);

@@ -1,7 +1,7 @@
-// Technology logos served from Devicon (pinned version) via jsDelivr
-const DEVICON = "https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/icons";
+// Technology logos from Devicon v2.16.0 (MIT), self-hosted in public/logos
+const LOGO_DIR = `${process.env.PUBLIC_URL}/logos`;
 const icon = (name, label, variant = "original") => ({
-	src: `${DEVICON}/${name}/${name}-${variant}.svg`,
+	src: `${LOGO_DIR}/${name}-${variant}.svg`,
 	alt: label,
 });
 
@@ -25,7 +25,7 @@ const LOGOS = {
 
 const INFO = {
 	main: {
-		title: "MP Portfolio",
+		title: "Matthew Pidden | Robotics Engineer",
 		name: "Matthew Pidden",
 		email: "mdpidden@yahoo.co.uk",
 	},
@@ -181,8 +181,8 @@ const INFO = {
 		description:
 			"Serial, parallel and distributed implementations of Conway's Game of Life in Go, splitting the grid across worker threads that coordinate over channels and across networked worker nodes, then benchmarking speed and scalability. Graded 81%, and I went on to TA the unit the following year.",
 		logos: [LOGOS.go],
-		linkText: "View Project Report",
-		link: "https://github.com/mattpidden/portfolio/blob/main/public/GO-Coursework-Report.pdf",
+		linkText: "",
+		link: "",
 	},
 	{
 		title: "Bloginator Cross-Platform App",

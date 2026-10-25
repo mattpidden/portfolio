@@ -51,8 +51,11 @@ const Homepage = () => {
 			</Helmet>
 
 			<div className="page-content">
+				<a className="skip-link" href="#main">
+					Skip to main content
+				</a>
 				<NavBar active="home" />
-				<div className="content-wrapper">
+				<main className="content-wrapper" id="main" tabIndex="-1">
 					<div className="homepage-logo-container" id="homepage-logo-container">
 						
 					</div>
@@ -61,12 +64,12 @@ const Homepage = () => {
 						<div className="homepage-hero">
 							<div className="homepage-first-area">
 								<div className="homepage-first-area-left-side">
-									<div className="title homepage-title">
+									<h1 className="title homepage-title">
 										<span>{INFO.homepage.titlepart1}</span>
 										<span className="homepage-title-name">{INFO.main.name}</span>
 										<br></br>
 										<Typewriter phrases={INFO.homepage.headlines} />
-									</div>
+									</h1>
 
 									<div className="subtitle homepage-subtitle">
 										{INFO.homepage.description}
@@ -76,7 +79,7 @@ const Homepage = () => {
 								<div className="homepage-first-area-right-side">
 									<div className="homepage-image-container">
 										<div className="homepage-image-wrapper">
-										<img src="https://avatars.githubusercontent.com/u/123552177?v=4" alt="Portrait" className="homepage-image"/>
+										<img src="https://avatars.githubusercontent.com/u/123552177?v=4" alt={`${INFO.main.name} working on a robot in a lab`} className="homepage-image"/>
 
 										
 										</div>
@@ -89,8 +92,9 @@ const Homepage = () => {
 									<a
 										href={INFO.socials.github}
 										target="_blank"
-										rel="noreferrer"
+										rel="noopener noreferrer"
 										className="github-tooltip"
+										aria-label="GitHub (opens in a new tab)"
 									>
 										<FontAwesomeIcon
 											icon={faGithub}
@@ -105,8 +109,9 @@ const Homepage = () => {
 									<a
 										href={INFO.socials.linkedin}
 										target="_blank"
-										rel="noreferrer"
+										rel="noopener noreferrer"
 										className="linkedin-tooltip"
+										aria-label="LinkedIn (opens in a new tab)"
 									>
 										<FontAwesomeIcon
 											icon={faLinkedin}
@@ -120,9 +125,8 @@ const Homepage = () => {
 								<>
 									<a
 										href={`mailto:${INFO.main.email}`}
-										target="_blank"
-										rel="noreferrer"
 										className="email-me-tooltip"
+										aria-label={`Email me at ${INFO.main.email}`}
 									>
 										<FontAwesomeIcon
 											icon={faMailBulk}
@@ -138,6 +142,7 @@ const Homepage = () => {
 										href={"Matthew Pidden CV.pdf"}
 										download={"Matthew Pidden CV.pdf"}
 										className="download-cv-tooltip"
+										aria-label="Download CV / Resume (PDF)"
 									>
 										<FontAwesomeIcon
 											icon={faFile}
@@ -145,7 +150,7 @@ const Homepage = () => {
 										/>
 									</a>
 									<Tooltip anchorSelect=".download-cv-tooltip" place="top">
-										Download CV / Resume
+										Download CV / Resume (PDF)
 									</Tooltip>
 								</>
 							</div>
@@ -159,9 +164,11 @@ const Homepage = () => {
 							<Contact />
 						</div>
 
-						<div className="page-footer">
-							<Footer />
-						</div>
+					</div>
+				</main>
+				<div className="content-wrapper">
+					<div className="page-footer">
+						<Footer />
 					</div>
 				</div>
 			</div>
