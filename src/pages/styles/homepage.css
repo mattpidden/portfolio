@@ -37,7 +37,7 @@ html {
 }
 
 .homepage-title-name {
-	background-image: linear-gradient(to right, rgb(22, 138, 233), rgb(29, 194, 172), rgb(17, 134, 56));
+	background-image: var(--accent-gradient);
   background-clip: text;
 	color: transparent;
 }
@@ -94,6 +94,63 @@ html {
 	padding-top: 200px;
 }
 
+/* On desktop the intro fills the window exactly, content centred vertically.
+   Equal top/bottom padding clears the fixed navbar and keeps it truly centred. */
+@media (min-width: 1025px) {
+	.homepage-logo-container {
+		display: none;
+	}
+
+	.homepage-container {
+		padding-top: 0;
+	}
+
+	.homepage-hero {
+		box-sizing: border-box;
+		min-height: 100vh;
+		min-height: 100svh;
+		padding: calc(3vh + 50px) 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	/* Scale the intro with the window so it always fits on one screen */
+	.homepage-first-area {
+		gap: 50px;
+	}
+
+	.homepage-first-area-left-side {
+		flex: 1 1 0;
+	}
+
+	.homepage-title,
+	.homepage-subtitle {
+		width: 100% !important;
+	}
+
+	.homepage-hero .homepage-title {
+		font-size: clamp(30px, 4.6vh, 45px);
+	}
+
+	.homepage-image-container {
+		width: clamp(220px, 24vw, 370px);
+		height: auto;
+	}
+}
+
+@media (min-width: 1025px) and (max-height: 920px) {
+	.homepage-hero .homepage-subtitle {
+		font-size: 14px;
+		line-height: 23px;
+		margin-top: 8px;
+	}
+
+	.homepage-socials {
+		padding-top: 20px;
+	}
+}
+
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
@@ -147,5 +204,37 @@ html {
 		flex-basis: auto;
 		margin-left: -25px;
 		margin-right: -25px;
+	}
+}
+
+@media (max-width: 600px) {
+	/* just enough room to clear the floating navbar */
+	.homepage-logo-container {
+		padding-top: calc(3vh + 50px);
+	}
+
+	.homepage-container {
+		padding-top: 0;
+	}
+
+	.homepage-image-container {
+		width: 240px;
+		height: auto;
+		margin-left: 0;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.homepage-title {
+		margin-top: 15px;
+	}
+
+	.homepage-socials {
+		padding-top: 24px;
+	}
+
+	.homepage-projects,
+	.homepage-contact {
+		padding-top: 90px;
 	}
 }

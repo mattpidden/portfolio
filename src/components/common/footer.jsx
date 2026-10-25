@@ -10,7 +10,7 @@ const Footer = () => {
 
 				<div className="footer-credits">
 					<div className="footer-credits-text">
-						© 2024 Matthew Pidden
+						© {new Date().getFullYear()} Matthew Pidden
 					</div>
 				</div>
 			</div>

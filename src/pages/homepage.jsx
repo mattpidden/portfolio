@@ -13,6 +13,7 @@ import 'react-tooltip/dist/react-tooltip.css';
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import AllProjects from "../components/projects/allProjects";
+import Typewriter from "../components/homepage/typewriter";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
@@ -57,95 +58,97 @@ const Homepage = () => {
 					</div>
 
 					<div className="homepage-container">
-						<div className="homepage-first-area">
-							<div className="homepage-first-area-left-side">
-								<div className="title homepage-title">
-									<span>{INFO.homepage.titlepart1}</span>
-									<span className="homepage-title-name">{INFO.main.name}</span>
-									<br></br>
-									<span>{INFO.homepage.titlepart2}</span>
+						<div className="homepage-hero">
+							<div className="homepage-first-area">
+								<div className="homepage-first-area-left-side">
+									<div className="title homepage-title">
+										<span>{INFO.homepage.titlepart1}</span>
+										<span className="homepage-title-name">{INFO.main.name}</span>
+										<br></br>
+										<Typewriter phrases={INFO.homepage.headlines} />
+									</div>
+
+									<div className="subtitle homepage-subtitle">
+										{INFO.homepage.description}
+									</div>
 								</div>
 
-								<div className="subtitle homepage-subtitle">
-									{INFO.homepage.description}
-								</div>
-							</div>
+								<div className="homepage-first-area-right-side">
+									<div className="homepage-image-container">
+										<div className="homepage-image-wrapper">
+										<img src="https://avatars.githubusercontent.com/u/123552177?v=4" alt="Portrait" className="homepage-image"/>
 
-							<div className="homepage-first-area-right-side">
-								<div className="homepage-image-container">
-									<div className="homepage-image-wrapper">
-									<img src={require('./portraitpic.jpg')} alt="Portrait" className="homepage-image"/>
-
-									
+										
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div className="homepage-socials">
-							<>
-								<a
-									href={INFO.socials.github}
-									target="_blank"
-									rel="noreferrer"
-									className="github-tooltip"
-								>
-									<FontAwesomeIcon
-										icon={faGithub}
-										className="homepage-social-icon"
-									/>
-								</a>
-								<Tooltip anchorSelect=".github-tooltip" place="top">
-									View my GitHub
-								</Tooltip>
-							</>
-							<>
-								<a
-									href={INFO.socials.linkedin}
-									target="_blank"
-									rel="noreferrer"
-									className="linkedin-tooltip"
-								>
-									<FontAwesomeIcon
-										icon={faLinkedin}
-										className="homepage-social-icon"
-									/>
-								</a>
-								<Tooltip anchorSelect=".linkedin-tooltip" place="top">
-									View my LinkedIn
-								</Tooltip>
-							</>
-							<>
-								<a
-									href={`mailto:${INFO.main.email}`}
-									target="_blank"
-									rel="noreferrer"
-									className="email-me-tooltip"
-								>
-									<FontAwesomeIcon
-										icon={faMailBulk}
-										className="homepage-social-icon"
-									/>
-								</a>
-								<Tooltip anchorSelect=".email-me-tooltip" place="top">
-									Email Me
-								</Tooltip>
-							</>
-							<>
-								<a
-									href={"Matthew Pidden CV.pdf"}
-									download={"Matthew Pidden CV.pdf"}
-									className="download-cv-tooltip"
-								>
-									<FontAwesomeIcon
-										icon={faFile}
-										className="homepage-social-icon"
-									/>
-								</a>
-								<Tooltip anchorSelect=".download-cv-tooltip" place="top">
-									Download CV / Resume
-								</Tooltip>
-							</>
+							<div className="homepage-socials">
+								<>
+									<a
+										href={INFO.socials.github}
+										target="_blank"
+										rel="noreferrer"
+										className="github-tooltip"
+									>
+										<FontAwesomeIcon
+											icon={faGithub}
+											className="homepage-social-icon"
+										/>
+									</a>
+									<Tooltip anchorSelect=".github-tooltip" place="top">
+										View my GitHub
+									</Tooltip>
+								</>
+								<>
+									<a
+										href={INFO.socials.linkedin}
+										target="_blank"
+										rel="noreferrer"
+										className="linkedin-tooltip"
+									>
+										<FontAwesomeIcon
+											icon={faLinkedin}
+											className="homepage-social-icon"
+										/>
+									</a>
+									<Tooltip anchorSelect=".linkedin-tooltip" place="top">
+										View my LinkedIn
+									</Tooltip>
+								</>
+								<>
+									<a
+										href={`mailto:${INFO.main.email}`}
+										target="_blank"
+										rel="noreferrer"
+										className="email-me-tooltip"
+									>
+										<FontAwesomeIcon
+											icon={faMailBulk}
+											className="homepage-social-icon"
+										/>
+									</a>
+									<Tooltip anchorSelect=".email-me-tooltip" place="top">
+										Email Me
+									</Tooltip>
+								</>
+								<>
+									<a
+										href={"Matthew Pidden CV.pdf"}
+										download={"Matthew Pidden CV.pdf"}
+										className="download-cv-tooltip"
+									>
+										<FontAwesomeIcon
+											icon={faFile}
+											className="homepage-social-icon"
+										/>
+									</a>
+									<Tooltip anchorSelect=".download-cv-tooltip" place="top">
+										Download CV / Resume
+									</Tooltip>
+								</>
+							</div>
 						</div>
 
 						<div className="homepage-projects" id="homepage-projects">

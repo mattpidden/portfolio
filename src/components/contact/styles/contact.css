@@ -16,7 +16,7 @@
 }
 
 .contact-title-keyword {
-	background-image: linear-gradient(to right, rgb(29, 194, 172), rgb(17, 134, 56));
+	background-image: var(--accent-gradient);
   background-clip: text;
 	color: transparent;
 }

@@ -18,7 +18,7 @@ const NavBar = (props) => {
 										: "nav-item"
 								}
 							>
-								<a href="#homepage-logo-container">Home</a>
+								<a href="#top">Home</a>
 							</li>
 							
 							<li

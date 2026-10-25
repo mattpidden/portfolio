@@ -64,7 +64,7 @@
 }
 
 .not-found-link:hover {
-	background-color: #fff;
+	background-color: var(--surface-color);
 	color: var(--link-color);
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
