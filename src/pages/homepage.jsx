@@ -139,10 +139,11 @@ const Homepage = () => {
 								</>
 								<>
 									<a
-										href={"Matthew Pidden CV.pdf"}
-										download={"Matthew Pidden CV.pdf"}
+										href={`${process.env.PUBLIC_URL}/Matthew%20Pidden%20CV.pdf`}
+										target="_blank"
+										rel="noopener noreferrer"
 										className="download-cv-tooltip"
-										aria-label="Download CV / Resume (PDF)"
+										aria-label="View CV / Resume (PDF, opens in a new tab)"
 									>
 										<FontAwesomeIcon
 											icon={faFile}
@@ -150,7 +151,7 @@ const Homepage = () => {
 										/>
 									</a>
 									<Tooltip anchorSelect=".download-cv-tooltip" place="top">
-										Download CV / Resume (PDF)
+										View CV / Resume (PDF)
 									</Tooltip>
 								</>
 							</div>

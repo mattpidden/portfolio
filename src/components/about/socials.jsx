@@ -55,14 +55,17 @@ const Socials = () => {
 
 			<div className="social">
 				<a
-					href={"Matthew Pidden CV.pdf"}
-					download={"Matthew Pidden CV.pdf"}
+					href={`${process.env.PUBLIC_URL}/Matthew%20Pidden%20CV.pdf`}
+					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<div className="social-icon">
 						<FontAwesomeIcon icon={faFile} className="social-icon" />
 					</div>
 
-					<div className="social-text">Download CV / Resume (PDF)</div>
+					<div className="social-text">
+						View CV / Resume (PDF)<span className="visually-hidden"> (opens in a new tab)</span>
+					</div>
 
 				</a>
 			</div>
