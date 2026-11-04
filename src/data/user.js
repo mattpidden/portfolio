@@ -41,12 +41,12 @@ const INFO = {
 		// rotating headlines shown with a typing effect after the name
 		headlines: [
 			"A robotics engineer with a passion for the ocean.",
-			"A recent Imperial College London MSc Robotics graduate.",
+			"An Imperial MSc Robotics graduate with Distinction.",
 			"The builder of a world record rubiks cube solving robot.",
 			"A Yachtmaster Offshore sailor and seasoned yacht racer.",
 			"Available to work in Miami FL from November 2026.",
 		],
-		description: "I'm a robotics engineer and software developer with an MSc in Visual Computing and Robotics from Imperial College London, and a first-class BSc in Computer Science from the University of Bristol, where I graduated in the top 10 of my year. I'm keen to work in marine robotics, where I can combine autonomy, computer vision and embedded systems with my background in yacht racing and my Yachtmaster Offshore qualification. I'm currently building a 3D-printed autonomous sailing vessel for marine data collection. Other highlights include The Revenger, a robot that broke the world record for solving a 4x4 Rubik’s Cube (45.305 seconds), and Santa Tracker, a Flutter app that reached #8 on the UK App Store with over 100,000 downloads. I'm available to work in Miami, FL from November 2026."
+		description: "I'm a robotics engineer and software developer who graduated with Distinction from Imperial College London (MSc Visual Computing and Robotics) and with first-class honours from the University of Bristol (BSc Computer Science), finishing in the top 10 of my year. I'm keen to work in marine robotics, where I can combine autonomy, computer vision and embedded systems with my background in yacht racing and my Yachtmaster Offshore qualification. I'm currently building a 3D-printed autonomous sailing vessel for marine data collection. Other highlights include The Revenger, a robot that broke the world record for solving a 4x4 Rubik’s Cube (45.305 seconds), and Santa Tracker, a Flutter app that reached #8 on the UK App Store with over 100,000 downloads. I'm available to work in Miami, FL from November 2026."
 	},
 
 	// category: "hardware" (robotics, microcontrollers, devices) or "software" (apps, websites, research code)
@@ -80,7 +80,7 @@ const INFO = {
 		category: "hardware",
 		badges: ["University"],
 		description:
-			"MSc thesis at Imperial College London. Extends NVIDIA's VLA-0 (Qwen2.5-VL) so a robot policy is conditioned on one image tracing the end-effector's path through a human demo, improving task generalisation with no architectural changes or new data. Python, PyTorch, MediaPipe and SLURM HPC training.",
+			"MSc dissertation for my Distinction degree at Imperial College London. Extends NVIDIA's VLA-0 (Qwen2.5-VL) so a robot policy is conditioned on one image tracing the end-effector's path through a human demo, improving task generalisation with no architectural changes or new data. Python, PyTorch, MediaPipe and SLURM HPC training.",
 		logos: [LOGOS.python, LOGOS.pytorch],
 		linkText: "View GitHub",
 		link: "https://github.com/mattpidden/vla0-eetc",
@@ -179,7 +179,7 @@ const INFO = {
 		category: "software",
 		badges: ["University"],
 		description:
-			"Serial, parallel and distributed implementations of Conway's Game of Life in Go, splitting the grid across worker threads that coordinate over channels and across networked worker nodes, then benchmarking speed and scalability. Graded 81%, and I went on to TA the unit the following year.",
+			"Serial, parallel and distributed implementations of Conway's Game of Life in Go, splitting the grid across worker threads that coordinate over channels and across networked worker nodes, then benchmarking speed and scalability. I went on to TA the unit the following year.",
 		logos: [LOGOS.go],
 		linkText: "",
 		link: "",
