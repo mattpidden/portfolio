@@ -21,6 +21,8 @@ const LOGOS = {
 	go: icon("go", "Go"),
 	unity: icon("unity", "Unity"),
 	csharp: icon("csharp", "C#"),
+	html: icon("html5", "HTML"),
+	css: icon("css3", "CSS"),
 };
 
 const INFO = {
@@ -53,6 +55,17 @@ const INFO = {
 	// badges: first is the project type (Personal / University / Commissioned / Hackathon),
 	// second is the status (In Progress / Archived)
 	projects: [{
+		title: "Damer Garden Care Website",
+		date: "November 2026",
+		category: "software",
+		badges: ["Commissioned"],
+		description:
+			"A website for Damer Garden Care, my brother's gardening business in West Sussex, which I designed, built, deployed and host. A fast static HTML, CSS and JavaScript site on GitHub Pages with a custom domain, local SEO structured data, before/after photo sliders, and one content file he can edit himself.",
+		logos: [LOGOS.html, LOGOS.css, LOGOS.javascript],
+		linkText: "View Website",
+		link: "https://www.damergardencare.co.uk/",
+	},
+	{
 		title: "Autonomous Surface Vessel",
 		date: "October 2026 - Present",
 		category: "hardware",
